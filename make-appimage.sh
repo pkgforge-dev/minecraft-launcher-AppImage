@@ -14,7 +14,8 @@ export DESKTOP=/usr/share/applications/minecraft-launcher.desktop
 # Deploy dependencies
 quick-sharun /usr/bin/minecraft-launcher*
 
-# Additional changes can be done in between here
+# strace picks up the minecraft install in HOME lol
+rm -rf ./AppDir/lib/github
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
