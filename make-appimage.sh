@@ -10,6 +10,7 @@ export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/symbolic/apps/minecraft-launcher.svg
 export DESKTOP=/usr/share/applications/minecraft-launcher.desktop
+export LOCALE_FIX=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/minecraft-launcher*
